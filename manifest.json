@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+    "name": "Instagram Followers Extension",
+    "description": "This extension will tell you who isn't following you back on instagram",
+    "version": "1.0",
+    "browser_action": {
+        "default_icon": "ignonfollow_white.png",
+        "default_popup": "ig.html"
+    },
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "js": [
+                "contentscript.js"
+            ],
+            "matches": [
+                "https://www.instagram.com/*"
+            ]
+        }
+    ],
+    "web_accessible_resources": [
+        "script.js"
+    ]
+}

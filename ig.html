@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Instagrammer</title>
+    <script src="ig.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        .button {
+            background-color: #ddd;
+            border: none;
+            color: black;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 16px;
+        }
+
+        .button:hover {
+            background-color: #f1f1f1;
+        }
+
+        .mainDiv {
+            text-align: center;
+        }
+
+        body {
+            min-width: 300px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .title {
+            background-color: lightblue;
+            padding: 10px 20px;
+            text-align: center;
+            border-radius: 16px;
+        }
+
+        .paragraphText {
+            font-size: medium;
+        }
+
+        ol {
+            text-align: start;
+        }
+
+        li {
+            padding: 4px 4px;
+        }
+
+        td,
+        th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+
+        th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: lightblue;
+            color: black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="mainDiv">
+        <h1 class="title">Find IG Non-followers</h1>
+        <ol>
+            <li> Navigate to <a target="_blank" href="https://instagram.com"> instagram </a></li>
+            <li> Sign in </li>
+            <li> Enter your username: <input required="required" id="usernameInput"></input> </li>
+            <li> Press the 'Find em!' button </li>
+            <li> A table will be displayed with accounts not following you back (give it a moment)</li>
+        </ol>
+        <button id="findNonFollowers" class="button"> Find em! </button>
+        <br><br>
+    </div>
+</body>
+
+</html>
